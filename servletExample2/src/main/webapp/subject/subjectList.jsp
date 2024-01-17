@@ -28,15 +28,15 @@
 		<link rel="shortcut icon" href="../image/icon.png" />
 		<link rel="apple-touch-icon" href="../image/icon.png" />
 		<!-- 모바일 웹 페이지 설정 끝 -->
-		<script src="/servletExample/js/jquery-3.7.1.min.js"></script>
-		<!-- request.getContextPath() 현재 프로젵그의 Context명을 반환, 즉 /servletExample 
+		<!--  <script src="/servletExample2/js/jquery-3.7.1.min.js"></script>-->
+		<%-- request.getContextPath() 현재 프로젵그의 Context명을 반환, 즉 /servletExample 
 		<script>
 			$(function(){
 				$("#subjectInsert").on("click", ()=>{
 					location.href="<%=request.getContextPath()%>/subject/subjectForm.jsp";
 				});
 			});
-		</script>-->
+		</script>--%>
 		
 	</head>
 	<body>
@@ -62,7 +62,7 @@
 							<th>학과명</th>
 							<th>삭제여부</th>
 							<th>수정</th>
-							<th>tkrwp</th>
+							<th>삭제</th>
 						</tr>
 					</thead>
 					<tbody>

@@ -140,7 +140,7 @@ public class SubjectDAO {
 		try {
 			con = getConnection();
 			pstmt = con.prepareStatement(sql.toString());
-			pstmt.setString(1, svo.getS_num());
+			pstmt.setString(1, svo.getS_name());
 			pstmt.setInt(2, svo.getNo());
 			
 			int i = pstmt.executeUpdate();

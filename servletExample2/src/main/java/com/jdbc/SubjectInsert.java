@@ -31,7 +31,7 @@ public class SubjectInsert extends HttpServlet {
 			response.sendRedirect("/servletExample2/list");
 		}else {
 			request.setAttribute("message", "학과 등록 실패");
-			RequestDispatcher dispatcher = request.getRequestDispatcher("error/error/jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("error/error.jsp");
 			dispatcher.forward(request, response);
 		}
 	}

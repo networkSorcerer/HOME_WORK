@@ -57,9 +57,11 @@ public class SubjectVO {
 	public void setDeleteable(String deleteable) {
 		this.deleteable = deleteable;
 	}
-	
+
 	@Override
-	public String toString () {
-		return "SubjectVO [ no =" + no + ", s_num = " + s_num + ", s_name = " + s_name + ",deleteable=" + deleteable + "]";
+	public String toString() {
+		return "SubjectVO [no=" + no + ", s_num=" + s_num + ", s_name=" + s_name + ", deleteable=" + deleteable + "]";
 	}
+	
+	
 }
