@@ -18,7 +18,16 @@ public class FirstServlet3 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
 		
-		RequestDispatcher dispatch = request.getRequestDispatcher("secondDispatcher?language=java");
+
+ 
+
+		
+		request.setAttribute("language", "java");
+		request.setAttribute("name", "홍길동");
+		request.setAttribute("address", "서울특별시 강남구  테헤란로 14길 6 ");
+		request.setAttribute("age", 20);
+		
+		RequestDispatcher dispatch =request.getRequestDispatcher("secondDispatcher");
 		dispatch.forward(request, response);
 	}
 

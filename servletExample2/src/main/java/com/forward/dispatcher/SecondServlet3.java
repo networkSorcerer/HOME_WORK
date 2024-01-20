@@ -17,7 +17,12 @@ public class SecondServlet3 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
-		String language = request.getParameter("language");
+//		String language = request.getParameter("language");
+		
+		String language = (String)request.getAttribute("language");
+		String name = (String ) request.getAttribute("name");
+		String address = (String)request.getAttribute("address");
+		int age = (int) request.getAttribute("age");
 		
 		out.println("<!DOCTYPE html><html>");
 		out.println("<head><meta charset='UTF-8' />");
@@ -25,6 +30,9 @@ public class SecondServlet3 extends HttpServlet {
 		out.println("<link rel='icon' href='data:,'></head>");
 		out.println("<body><div>sendRedirect를 이용한 reditect실습입니다</div>");
 		out.println("<div>우리가 배운 언어 : " + language + "</div>");
+		out.println("<div>나의 이름 : " + name + "</div>");
+		out.println("<div>나의 주소 : " + address + "</div>");
+		out.println("<div>나의 나이 : " + age + "</div>");
 		out.println("</body></html>");
 	}
 
